@@ -1,21 +1,34 @@
 # ACQA_API - Projeto MVC PHP
 
-Projeto de avaliação contínua (ACQA) usando PHP, MySQL e arquitetura MVC.
+Aluno: Vquintiliano
+Curso: Sistemas de Informação
+Disciplina: Desenvolvimento Web / Avaliação Contínua (ACQA)
 
-Funcionalidades:
-- Cadastro e login de usuários (senhas com bcrypt)
-- Dashboard com lista de tarefas do usuário logado
-- CRUD de tarefas (criar, listar, editar, excluir)
-- Padrões de projeto aplicados: Singleton (Database) e Repository (UserRepository / TaskRepository)
+Descrição
+Este projeto é uma implementação didática de um sistema de tarefas em PHP utilizando a arquitetura MVC e MySQL. O objetivo é demonstrar conhecimentos práticos sobre roteamento, controllers, separação de responsabilidades, persistência e aplicação de padrões de projeto.
 
-Instalação
+Funcionalidades implementadas
+- Cadastro e login de usuários (senhas protegidas com bcrypt)
+- Dashboard com lista de tarefas do usuário autenticado
+- CRUD completo para tarefas (criar, listar, editar, remover)
+- Arquitetura MVC com controllers, repositories e views
+- Padrões: Singleton (Database) e Repository (UserRepository, TaskRepository)
+
+Instalação e execução
 1. Clone o repositório
-2. Configure o banco de dados em `app/config.php`
-3. Importe o arquivo `migrations/schema.sql` no seu MySQL
+2. Ajuste as credenciais do banco em `app/config.php`
+3. Importe o arquivo `migrations/schema.sql` no MySQL
 4. Aponte o DocumentRoot do servidor para a pasta `public/`
-5. Acesse a aplicação pelo navegador
+5. Acesse pelo navegador: `http://localhost/ACQA_API/public/?p=login`
 
-OBS: Coloque prints das telas (login, dashboard, adição de tarefa) e cole o link do repositório no campo "RESPOSTA DO ALUNO" conforme instruções da avaliação.
+Observações do aluno
+Durante o desenvolvimento, procurei seguir as boas práticas básicas observadas na disciplina de Sistemas de Informação:
+- Separação de responsabilidades: a camada de acesso a dados fica nos repositórios, a lógica de requisição nas controllers e a visualização nas views.
+- Segurança: as senhas são armazenadas com hash bcrypt e o acesso às rotas de tarefas exige autenticação.
+- Manutenibilidade: a conexão com o banco usa o padrão Singleton para facilitar a troca de configuração em apenas um ponto.
 
-Conclusão (Exemplo de texto a incluir no campo RESPOSTA DO ALUNO):
-Neste projeto implementei uma aplicação MVC em PHP com autenticação de usuários via bcrypt e persistência em MySQL. A arquitetura separa responsabilidades em controllers, models/repositories e views. A conexão com o banco usa o padrão Singleton para garantir uma única instância PDO, e os repositórios encapsulam a lógica de acesso a dados (Repository Pattern). A view é simples PHP/HTML sem frameworks para facilitar avaliação.
+Conclusão (texto para colar em "RESPOSTA DO ALUNO"):
+Como estudante de Sistemas de Informação, desenvolvi esta aplicação de forma a demonstrar entendimento da arquitetura MVC e aplicação de padrões de projeto. A solução separa claramente as camadas, usa bcrypt para proteger senhas, e organiza o acesso a dados por meio de repositórios, facilitando testes e manutenção. Este trabalho consolidou conceitos vistos nas primeiras semanas do curso, como modelos relacionais em MySQL, rotas básicas em um front controller e o uso consciente de padrões de projeto (Singleton e Repository). O repositório do projeto está disponível em: https://github.com/Vquintiliano/ACQA_API
+
+Screenshots
+Inclua prints das telas de login/cadastro, dashboard e adição de tarefa no repositório ou documento de entrega (não incluídos aqui pois devem ser gerados localmente).
