@@ -2,7 +2,7 @@
 
 Aluno: Vquintiliano
 Curso: Sistemas de Informação
-Disciplina: Desenvolvimento Web / Avaliação Contínua (ACQA)
+Disciplina: Aplicação para Internet / Avaliação Contínua (ACQA)
 
 Descrição
 Este projeto é uma implementação didática de um sistema de tarefas em PHP utilizando a arquitetura MVC e MySQL. O objetivo é demonstrar conhecimentos práticos sobre roteamento, controllers, separação de responsabilidades, persistência e aplicação de padrões de projeto.
@@ -26,9 +26,3 @@ Durante o desenvolvimento, procurei seguir as boas práticas básicas observadas
 - Separação de responsabilidades: a camada de acesso a dados fica nos repositórios, a lógica de requisição nas controllers e a visualização nas views.
 - Segurança: as senhas são armazenadas com hash bcrypt e o acesso às rotas de tarefas exige autenticação.
 - Manutenibilidade: a conexão com o banco usa o padrão Singleton para facilitar a troca de configuração em apenas um ponto.
-
-Conclusão (texto para colar em "RESPOSTA DO ALUNO"):
-Como estudante de Sistemas de Informação, desenvolvi esta aplicação de forma a demonstrar entendimento da arquitetura MVC e aplicação de padrões de projeto. A solução separa claramente as camadas, usa bcrypt para proteger senhas, e organiza o acesso a dados por meio de repositórios, facilitando testes e manutenção. Este trabalho consolidou conceitos vistos nas primeiras semanas do curso, como modelos relacionais em MySQL, rotas básicas em um front controller e o uso consciente de padrões de projeto (Singleton e Repository). O repositório do projeto está disponível em: https://github.com/Vquintiliano/ACQA_API
-
-Screenshots
-Inclua prints das telas de login/cadastro, dashboard e adição de tarefa no repositório ou documento de entrega (não incluídos aqui pois devem ser gerados localmente).
